@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "energy": "http://example.com/energy/",
+    "utility": {
+      "@id": "energy:Utility",
+      "@type": "@id"
+    },
+    "protocol_maintainer": {
+      "@id": "energy:protocolMaintainer",
+      "@type": "@id"
+    },
+    "api": {
+      "@id": "energy:api",
+      "@type": "@id"
+    },
+    "authentication": {
+      "@id": "energy:authentication",
+      "@type": "@id"
+    },
+    "data_holders": "energy:dataHolders",
+    "data_owners": "energy:dataOwners",
+    "data_recipients": "energy:dataRecipients",
+    "permission_administrators": "energy:permissionAdministrators",
+    "payment_terms": "energy:paymentTerms",
+    "country": "schema:addressCountry",
+    "countryCode": "schema:addressCountryCode"
+  },
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@type": "Country",
+        "country": "United States",
+        "countryCode": "USA",
+        "electricity": {
+          "@type": "utility",
+          "protocol_maintainer": "https://energy.gov/electricity",
+          "api": "https://api.energy.gov/electricity/v1",
+          "authentication": "https://energy.gov/electricity/auth",
+          "data_holders": "",
+          "data_owners": "",
+          "data_recipients": "",
+          "permission_administrators": "",
+          "payment_terms": ""
+        },
+        "gas": {
+          "@type": "utility",
+          "protocol_maintainer": "https://energy.gov/naturalgas",
+          "api": "https://api.energy.gov/naturalgas/v1",
+          "authentication": "https://energy.gov/naturalgas/auth",
+          "data_holders": "",
+          "data_owners": "",
+          "data_recipients": "",
+          "permission_administrators": "",
+          "payment_terms": ""
+        },
+        "distanceHeatingCooling": {
+          "@type": "utility",
+          "protocol_maintainer": "https://energy.gov/heating-cooling",
+          "api": "https://api.energy.gov/heating-cooling/v1",
+          "authentication": "https://energy.gov/heating-cooling/auth",
+          "data_holders": "",
+          "data_owners": "",
+          "data_recipients": "",
+          "permission_administrators": "",
+          "payment_terms": ""
+        },
+        "localHeatingCooling": {
+          "@type": "utility",
+          "protocol_maintainer": "https://energy.gov/local-heating-cooling",
+          "api": "https://api.energy.gov/local-heating-cooling/v1",
+          "authentication": "https://energy.gov/local-heating-cooling/auth",
+          "data_holders": "",
+          "data_owners": "",
+          "data_recipients": "",
+          "permission_administrators": "",
+          "payment_terms": ""
+        },
+        "water": {
+          "@type": "utility",
+          "protocol_maintainer": "https://energy.gov/water",
+          "api": "https://api.energy.gov/water/v1",
+          "authentication": "https://energy.gov/water/auth",
+          "data_holders": "",
+          "data_owners": "",
+          "data_recipients": "",
+          "permission_administrators": "",
+          "payment_terms": ""
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-98.5795, 39.8283]
+      }
+    }
+  ]
+}
